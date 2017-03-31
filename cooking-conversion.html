@@ -9,18 +9,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>Cooking Conversion using jQuery</h1>
+      <div class="jumbotron">
+        <h2>Cooking Conversion using jQuery</h2>
 
-      <form id="unitConversion">
-        <div class="form-group">
-          <label for="gallonsToLiters">Convert gallons to liters:</label>
-          <input id="gallons" class="form-group" type="number" placeholder="gallons">
-          <button type="submit" class="btn">Convert</button>
-        </div>
-      </form>
-      <div id="outputResult">
-
+        <button type="button" class="btn btn-danger" id="red">Red</button>
+        <button type="button" class="btn btn-warning" id="yellow">Yellow</button>
       </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <form id="gallonsToLiters">
+                <div class="form-group">
+                  <label for="gallonsToLiters">Convert gallons to liters:</label>
+                  <input id="gallons" class="form-group" type="number" placeholder="gal">
+                </div>
+                <button type="submit" class="btn">Convert</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form id="litersToGallons">
+                <div class="form-group">
+                  <label for="litersToGallons">Convert liters to gallons:</label>
+                  <input id="liters" class="form-group" type="number" placeholder="L">
+                </div>
+                <button type="submit" class="btn">Convert</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <blockquote>
+        <p>Result: <span class="outputResult"></span></p>
+        <footer>Thanks for using this app.</footer>
+      </blockquote>
     </div>
   </body>
 </html>

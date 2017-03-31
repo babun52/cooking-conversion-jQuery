@@ -1,1 +1,11 @@
+.red-background {
+  background-color: red;
+}
 
+.yellow-background {
+  background-color: yellow;
+}
+
+blockquote {
+  display: none;
+}
