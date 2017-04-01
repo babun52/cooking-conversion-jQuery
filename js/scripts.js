@@ -13,7 +13,7 @@ $(document).ready(function() {
   $("form#gallonsToLiters").submit(function(event) {
     event.preventDefault();
 
-    var gallonsInput = $("input#gallons").val();
+    var gallonsInput = parseInt($("input#gallons").val());
     var result = gallonsToLiters(gallonsInput).toFixed(4);
 
     $(".outputResult").text(result + "L");
@@ -23,7 +23,7 @@ $(document).ready(function() {
   $("form#litersToGallons").submit(function(event) {
     event.preventDefault();
 
-    var inputLiters = $("input#liters").val();
+    var inputLiters = parseInt($("input#liters").val());
     var result = litersToGallons(inputLiters).toFixed(4);
 
     $(".outputResult").text(result + "gal");
